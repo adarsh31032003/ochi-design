@@ -1,0 +1,833 @@
+#featuredProj {
+  background-color: #f1f1f1;
+  width: 100vw;
+}
+
+#mobileOchiFooter {
+  display: none;
+}
+
+#featuredProj #mainHeading {
+  border-bottom: 1px solid #b2b2b2;
+  color: #000;
+  font-size: 4rem;
+  padding: 2rem 4rem;
+  font-family: NeueMontreal;
+}
+
+#projectDetails {
+  padding: 2rem 4rem;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  font-family: NeueMontreal;
+}
+
+#brandText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -70%);
+  overflow: hidden;
+  height: 30%;
+  width: 40%;
+}
+
+#brandText h1 {
+  font-size: 13rem;
+  font-family: FoundersGrotesk;
+  color: rgba(205, 234, 104);
+}
+
+#leftWhite,
+#rightBlack {
+  width: 50%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.listStyle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blackCircle {
+  width: 1rem;
+  height: 1rem;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+#leftWhite h2,
+#rightBlack h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.imgHolder {
+  width: 100%;
+  height: 80%;
+  background-color: aliceblue;
+  overflow: hidden;
+  transition: all 1s ease;
+  border-radius: 1rem;
+}
+
+.imgHolder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.projectDetailFooter {
+  display: flex;
+  gap: 1rem;
+  text-transform: uppercase;
+  height: 6%;
+  color: #000;
+}
+
+.projectDetailFooter > div {
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  border-radius: 40rem;
+}
+
+.wateryEffect {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.wateryEffect div,
+.wateryEffectCmp div,
+.wateryEffectCmp button {
+  position: relative;
+  z-index: 2;
+}
+
+#wateryEffectParentTen,
+#wateryEffectParentNine {
+  border-radius: 10rem;
+}
+
+.wateryEffectCmp {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50rem;
+  left: 2rem;
+  top: 25rem;
+}
+
+#ballonSevenUp {
+  width: max-content;
+  overflow: hidden;
+}
+
+#ballonFourDown,
+#ballonThreeDown,
+#ballonTwoDown,
+#ballonOneDown,
+#ballonFiveDown,
+#ballonSixDown,
+#ballonSevenDown,
+#ballonEightDown,
+#ballonNineDown,
+#ballonTenDown {
+  width: 9.5rem;
+  height: 12rem;
+  border-radius: 20%;
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+  left: -0.1rem;
+  top: 3rem;
+}
+
+#ballonSixDown {
+  width: 20rem;
+}
+
+#ballonSevenDown,
+#ballonEightDown {
+  width: 18rem;
+  background-color: #fff;
+  top: 3rem;
+}
+
+#ballonTenDown {
+  top: 4rem;
+  width: 19rem;
+}
+
+#ballonNineDown {
+  width: 19rem;
+  top: 4rem;
+}
+
+.zoomOutImgContainer {
+  scale: 0.95;
+}
+
+.zoomImageFeatured {
+  scale: 1.1;
+}
+
+.opacityZero {
+  opacity: 0;
+}
+
+.opacityOne {
+  opacity: 1;
+}
+
+#leftBrandText,
+#rightBrandText {
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 250px);
+}
+
+#leftBrandText {
+  position: absolute;
+}
+
+#rightBrandText {
+  position: absolute;
+  bottom: -100%;
+  text-align: center;
+  left: 50%;
+}
+
+#companyLogos {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  display: flex;
+  gap: 1rem;
+}
+
+#featuredProj {
+  position: relative;
+}
+
+#ochiLogo,
+#clutchLogo {
+  width: 50%;
+  height: 50%;
+}
+
+#ochiLogo {
+  background-color: rgba(0, 77, 67);
+  position: relative;
+  border-radius: 1rem;
+}
+
+#ochiLogo img,
+#clutch img,
+#businessBootcamp img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8rem;
+}
+
+#copyRightOchi {
+  color: rgba(205, 234, 104);
+  border: 1px solid rgba(205, 234, 104);
+  max-width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 50rem;
+  position: absolute;
+  top: 25rem;
+  left: 2rem;
+  font-family: NeueMontreal;
+}
+
+#clutch button,
+#businessBootcamp button {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 50rem;
+  font-family: NeueMontreal;
+  position: relative;
+  border: 1px solid #fff;
+  z-index: 5;
+}
+
+#clutchLogo {
+  display: flex;
+  gap: 1rem;
+}
+
+#clutch {
+  width: 50%;
+  background-color: rgba(33, 33, 33);
+  border-radius: 1rem;
+  position: relative;
+}
+
+#businessBootcamp {
+  width: 50%;
+  background-color: rgba(33, 33, 33);
+  border-radius: 1rem;
+  position: relative;
+}
+
+#bigQuestion {
+  background-color: rgba(205, 234, 104);
+}
+
+#presentationSection {
+  background-color: #f1f1f1;
+  font-family: FoundersGrotesk;
+  padding: 2rem 4rem;
+  display: flex;
+  position: relative;
+  z-index: 90;
+}
+
+#footerLeft {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footerRight {
+  width: 50%;
+  height: 100%;
+  font-family: NeueMontreal;
+  color: #000;
+  font-size: 1.31rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footerLeftMainHeading p,
+.footerRightMainHeading p {
+  color: #000;
+  font-size: 10.5rem;
+  text-transform: uppercase;
+  font-family: FoundersGrotesk;
+  line-height: 8rem;
+}
+
+.footerLeftSmallHeading {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000;
+  font-family: NeueMontreal;
+  margin-bottom: 2rem;
+}
+
+.bigQAnimate {
+  position: absolute;
+  bottom: -100vh;
+  z-index: 10;
+}
+
+#tempBlackPage {
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+}
+
+#btnCtn {
+  text-align: center;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: NeueMontreal;
+  font-size: 1.1rem;
+}
+
+#projectStart,
+#companyEmail {
+  width: max-content;
+  text-transform: uppercase;
+  border-radius: 10rem;
+}
+
+#projectStart,
+#smallCircleOne {
+  position: relative;
+  z-index: 10;
+}
+
+.commonBtnCtn {
+  background-color: #212121;
+  border: 1px solid #000;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+#orText {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.3rem;
+}
+
+#companyEmail {
+  background-color: transparent;
+}
+
+#projectBtnCtnTwo {
+  color: #000;
+}
+
+#projectBtnCtnTwo {
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+}
+
+#projectBtnCtn {
+  position: relative;
+  z-index: unset;
+}
+
+#selfIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#selfIntro a:first-child {
+  opacity: 0.3;
+  border-bottom: 1px solid #000;
+  width: max-content;
+}
+
+#selfIntro p {
+  opacity: 1 !important;
+}
+
+#myname {
+  border-bottom: 1px solid #000;
+}
+
+#heart {
+  color: #e00;
+  animation: beat 0.25s infinite alternate;
+  transform-origin: center;
+  display: inline-block;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+}
+
+#smallCircleOne {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  transform: scale(0.8);
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projectBtnCtnTwo #smallCircleOne {
+  background-color: #000;
+}
+
+#smallCircleOne svg {
+  display: none;
+  transform: none;
+}
+
+#wateryEffectParentNine:hover #smallCircleOne {
+  transform: scale(3);
+}
+
+#wateryEffectParentNine:hover #smallCircleOne svg {
+  display: block;
+  transform: none;
+}
+
+#projectBtnCtnTwo:hover > #smallCircleOne {
+  transform: scale(3);
+  background-color: #fff;
+}
+
+#projectBtnCtnTwo:hover > #smallCircleOne svg {
+  display: block;
+  transform: none;
+}
+
+.runrun {
+  background-color: palevioletred;
+  width: 100%;
+  height: 100vh;
+}
+
+.mainQuestion {
+  font-family: FoundersGrotesk;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  font-size: 18rem;
+  line-height: 14rem;
+}
+
+#questionEye {
+  width: 40rem;
+  height: 20rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.whiteQuestionEye {
+  width: 16rem;
+  height: 16rem;
+  background-color: #fff;
+  border-radius: 19rem;
+}
+
+.whiteQuestionEye::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translate(-50%, -50%);
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background: #212121;
+}
+
+.whiteQuestionEye::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.footerRightTwo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#infoSite {
+  display: flex;
+  justify-content: space-between;
+  color: #212121;
+  margin: 2rem 0;
+}
+
+#infoSite p {
+  opacity: 0.3;
+}
+
+@media only screen and (max-width: 1025px) {
+  #presentationSection {
+    padding: 2rem;
+    height: 80vh;
+  }
+
+  #infoSite {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #selfIntro {
+    gap: 0.5rem;
+    align-items: unset;
+  }
+
+  .footerLeftMainHeading p,
+  .footerRightMainHeading p {
+    line-height: 6rem;
+    font-size: 6rem;
+  }
+
+  #companyLogos {
+    flex-direction: column;
+  }
+
+  #ochiLogo,
+  #clutchLogo {
+    width: 100%;
+  }
+
+  .card {
+    position: unset;
+  }
+
+  .cards {
+    height: max-content;
+  }
+
+  #questionEye {
+    position: relative;
+  }
+
+  .whiteQuestionEye::before,
+  .whiteQuestionEye::after {
+    left: 28%;
+  }
+
+  #whiteQuestionSecEye::before,
+  #whiteQuestionSecEye::after {
+    left: 72%;
+  }
+
+  .projectDetailFooter {
+    flex-direction: column;
+  }
+
+  .imgHolder {
+    height: 50%;
+  }
+
+  .projectDetailFooter > div {
+    width: max-content;
+  }
+
+  .projectDetailFooter {
+    height: 35%;
+  }
+
+  .wateryEffectCmp {
+    bottom: 1rem;
+    top: unset;
+  }
+  #copyRightOchi {
+    top: unset;
+    bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .mainQuestion {
+    font-size: 15rem;
+    line-height: 15rem;
+  }
+  .footerLeftMainHeading p,
+  .footerRightMainHeading p {
+    line-height: 4.7rem;
+    font-size: 4.7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #projectDetails {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 4rem;
+  }
+
+  #leftWhite,
+  #rightBlack {
+    width: 100%;
+    justify-content: unset;
+    height: 50%;
+  }
+
+  .imgHolder {
+    height: 60%;
+  }
+
+  #brandText {
+    display: none;
+  }
+
+  .projectDetailFooter {
+    flex-direction: column;
+  }
+
+  .projectDetailFooter div {
+    width: max-content;
+  }
+
+  .imgHolder {
+    margin: 1rem 0;
+  }
+
+  #featuredProj #mainHeading {
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 1.93rem;
+  }
+
+  .longDesc {
+    font-size: 1rem;
+  }
+
+  #companyLogos,
+  #clutchLogo {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  #ochiLogo,
+  #clutchLogo,
+  #businessBootcamp,
+  #clutch {
+    width: 100%;
+  }
+
+  #businessBootcamp,
+  #clutch {
+    width: 100%;
+    height: 50%;
+  }
+
+  #clutchLogo {
+    padding: 0;
+    height: 66%;
+  }
+
+  #ochiLogo {
+    height: 33%;
+  }
+
+  #copyRightOchi,
+  #clutch button,
+  #businessBootcamp button {
+    font-size: 14px;
+  }
+
+  #businessBootcamp img {
+    width: 6rem;
+  }
+
+  .mainQuestion {
+    font-size: 8rem;
+    line-height: 8rem;
+    word-wrap: break-word;
+  }
+
+  #presentationSection {
+    padding: 2rem;
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .footerLeftMainHeading p,
+  .footerRightMainHeading p {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .footerLeftSmallHeading {
+    display: none;
+  }
+
+  .footerRightOne,
+  .footerRightTwo,
+  .footerRightThree {
+    font-size: 1rem;
+  }
+
+  .footerRightTwo {
+    width: 100%;
+  }
+
+  #footerRight {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  #footerLeft {
+    height: unset;
+  }
+
+  #mobileOchiFooter {
+    display: block;
+    font-size: 2rem;
+    color: #000 !important;
+    opacity: 1 !important;
+  }
+
+  .whiteQuestionEye::before,
+  .whiteQuestionEye::after {
+    left: 28%;
+  }
+
+  #whiteQuestionSecEye::before,
+  #whiteQuestionSecEye::after {
+    left: 72%;
+  }
+
+  .card {
+    position: unset;
+    height: 100vh;
+  }
+  .cards {
+    height: unset;
+  }
+
+  #bigQuestion {
+    height: max-content;
+  }
+
+  #questionEye {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mainQuestion {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #businessBootcamp img,
+  #ochiLogo img,
+  #clutch img {
+    width: 5rem;
+  }
+
+  #companyLogos {
+    height: 120vh;
+  }
+}

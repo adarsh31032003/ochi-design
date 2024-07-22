@@ -1,0 +1,213 @@
+.fullPage {
+  visibility: hidden;
+  animation: show 1s forwards 3s;
+  height: 397vh;
+}
+
+#hamburger {
+  display: none;
+}
+
+@keyframes show {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.overflowAnimate {
+  animation: overflowStyle 12s forwards;
+  position: relative;
+}
+
+@keyframes overflowStyle {
+  0% {
+    overflow: hidden;
+  }
+  100% {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
+
+#ryan {
+  background-color: red;
+  color: #000;
+
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+#mainNavigation div,
+#contactUs {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#dummyService,
+#dummyWork,
+#dummyAbout,
+#dummyInsights,
+#dummyContact {
+  position: absolute;
+  bottom: -30px;
+}
+
+#realService,
+#realWork,
+#realAbout,
+#realInsights,
+#realContact {
+  position: relative;
+}
+
+#menuDropdown {
+  height: 100%;
+  background-color: #212121;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  animation: dropdown 0.5s ease forwards;
+}
+
+.reverse {
+  animation: revDropdown 0.5s ease forwards !important;
+}
+
+@keyframes dropdown {
+  0% {
+    height: 0vh;
+  }
+
+  100% {
+    height: 100vh;
+  }
+}
+
+@keyframes revDropdown {
+  0% {
+    height: 100vh;
+  }
+
+  100% {
+    height: 0vh;
+  }
+}
+#navHead {
+  align-items: center;
+}
+
+#ochiLogoHead {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #mainNavigation,
+  #contactUs {
+    display: none;
+  }
+
+  #navHead {
+    padding: 2rem;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  #mobileNav {
+    padding: 2rem;
+    font-family: NeueMontreal;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+  }
+
+  #mobileDropdownBody {
+    padding: 2rem;
+    font-size: 7rem;
+    line-height: 7rem;
+    font-family: FoundersGrotesk;
+    text-transform: uppercase;
+  }
+
+  #mobileDropdownFooter {
+    padding: 2rem;
+    font-family: NeueMontreal;
+    font-size: 1.6rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  #mobileDropdownFooter p {
+    width: max-content;
+  }
+  #mobileDropdownFooter > div p:not(:first-child) {
+    border-bottom: 0.1px solid #fff;
+  }
+
+  #mobileDropdownFooterLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #mobileDropdownBody {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #mobileDropdownBody {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  #mobileDropdownFooter {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #mobileDropdownBody {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  #mobileDropdownFooter {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #lastFooter {
+    display: flex;
+    gap: 2rem;
+  }
+
+  #mobileDropdownFooter {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+
+  #mobileDropdownBody {
+    padding-bottom: 0.5rem;
+  }
+}

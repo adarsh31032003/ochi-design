@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: FoundersGrotesk;
+  src: url("../fonts/FoundersGrotesk.ttf");
+}
+
+@font-face {
+  font-family: NeueMontreal;
+  src: url("../fonts/NeueMontreal.ttf");
+}
+
+body {
+  overflow: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+@media only screen and (max-width: 1025px) {
+  body {
+    overflow: unset;
+  }
+}

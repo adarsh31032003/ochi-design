@@ -1,0 +1,66 @@
+#myeye {
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/eyebackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#eyeContainer {
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+.whiteEye {
+  width: 16rem;
+  height: 16rem;
+  background-color: #fff;
+  border-radius: 19rem;
+}
+
+.whiteEye::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translate(-50%, -50%);
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background: #212121;
+}
+
+.whiteEye::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  #secEye::before {
+    left: 72%;
+  }
+
+  #secEye::after {
+    left: 72%;
+  }
+
+  .whiteEye::before,
+  .whiteEye::after {
+    left: 28%;
+  }
+}

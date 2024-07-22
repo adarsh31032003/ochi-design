@@ -1,0 +1,258 @@
+#cartContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  border-bottom: 1px solid #b2b2b2;
+  color: #212121;
+  font-family: NeueMontreal;
+}
+
+#serviceMobile {
+  display: none;
+}
+
+#mobileClientname {
+  display: none;
+}
+
+#cardHead,
+#cardBody {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+.extraWidth,
+.readBtn {
+  width: 15%;
+}
+
+.readBtn {
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: opacity 0.5s ease;
+}
+
+#cardHead {
+  justify-content: space-between;
+}
+
+#cardHead p:last-child {
+  text-align: end;
+}
+
+#cardBody {
+  overflow: hidden;
+  transition: height 0.8s ease;
+}
+
+.emptyBody {
+  margin-top: 2rem;
+}
+
+#cardBody img {
+  width: 8rem;
+  border-radius: 1rem;
+}
+
+.longDesc {
+  padding-top: 2rem;
+}
+
+.bigWidth {
+  width: 35% !important;
+  text-align: justify;
+}
+
+.midWidth {
+  width: 30% !important;
+  transition: all 0.5s ease;
+}
+.showService {
+  opacity: 1;
+}
+
+.hideService {
+  opacity: 0;
+}
+
+.smallWidth {
+  width: 20%;
+}
+
+.heightFull {
+  height: 26rem;
+}
+
+@keyframes makeFullHeight {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.heightZero {
+  height: 0px;
+}
+
+@keyframes giveHeight {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.serviceBtn {
+  background-color: #f1f1f1;
+  color: #000;
+  text-transform: uppercase;
+  width: max-content;
+  font-family: NeueMontreal;
+  padding: 0.4rem 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: background-color 1s ease;
+  border: 1px solid #000;
+}
+
+.serviceBtnCtn {
+  margin-bottom: 0.6rem;
+  width: max-content;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.serviceBtnArrow {
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 70%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.2s ease;
+}
+
+.serviceBtn:hover {
+  color: #f1f1f1;
+  background-color: #000;
+}
+
+.serviceBtn:hover + .serviceBtnArrow {
+  transform: scale(1);
+}
+
+#clientNameHead {
+  width: max-content;
+  cursor: pointer;
+}
+
+.upperLine {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+}
+
+.lowerLine {
+  width: 0%;
+  height: 1px;
+  background-color: #000;
+}
+
+#underlines {
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1025px) {
+  #cartContainer {
+    padding: 2rem;
+  }
+  #cardBody {
+    flex-direction: column;
+  }
+
+  .emptyBody {
+    margin-top: 1rem;
+  }
+
+  .midWidth {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+
+  .bigWidth {
+    width: 100% !important;
+  }
+
+  .heightFull {
+    height: 32rem;
+  }
+
+  #cardBody {
+    justify-content: unset;
+  }
+
+  #cardHead .bigWidth,
+  #cardHead .showService {
+    display: none;
+  }
+
+  #mobileClientname {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .smallWidth {
+    width: max-content;
+  }
+
+  .hideService {
+    display: none;
+  }
+
+  #serviceMobile {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    display: block;
+  }
+
+  #cardBody .midWidth {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heightFull {
+    height: 41rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .heightFull {
+    height: 47rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .heightFull {
+    height: 53rem;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .heightFull {
+    height: 60rem;
+  }
+}

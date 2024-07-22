@@ -1,0 +1,47 @@
+.marqueeContainer {
+  background-color: rgba(0, 77, 67, 1);
+  position: relative;
+  z-index: 2;
+}
+
+.marqueeContainer h1 {
+  font-size: 30rem;
+  line-height: 30rem;
+  font-family: FoundersGrotesk;
+  text-transform: uppercase;
+  animation: marquee 30s linear infinite forwards;
+  white-space: nowrap;
+}
+
+.marqueeContainer::before {
+  display: inline-block;
+  content: "";
+  border-top: 0.1px solid #fffff7;
+  width: 100vw;
+  position: relative;
+  top: 7rem;
+}
+
+.marqueeContainer::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.1px solid #fffff7;
+  width: 100vw;
+  position: relative;
+  bottom: 4rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .marqueeContainer h1 {
+    font-size: 15rem;
+  }
+}
